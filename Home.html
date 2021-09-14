@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="UTF-8"/>
+    <title>Home</title>
+    <link href="./tailwind.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/unicons.css" rel="stylesheet"/>
+    <link crossorigin="anonymous" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" rel="stylesheet"/>
+
+</head>
+
+
+
+<div class="container mx-auto ">
+
+    <div class="  w-screen  h-200 flex flex-col">
+        <div class=" w-full  py-1">
+            <div class="mt-5 mb-2  py-1 mx-auto   bg-gray-200 w-80 flex justify-between content-center rounded-xl">
+        <span class="flex justify-center items-center ">
+          <svg class="h-7 w-7 pl-1 pr-1 text-gray-400 hover:text-blue-400 transition duration-100 cursor-pointer"
+               fill="none"
+               stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2"/>
+          </svg>
+        </span>
+                <input class="flex-grow outline-none text-gray-600 focus:text-blue-600   bg-transparent" id="searchBar"
+                       onblur="blurFunc()" placeholder=""
+                       type="text"/>
+                <ul class="ul dis" id="drop-down-menu"></ul>
+                <span class="dis flex justify-center items-center " id="del">
+          <i class="fas fa-times-circle mr-2"></i>
+        </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class=" card    ">
+        <div class="text-xl font-bold	mt-10 ml-2">Category One</div>
+        <div class="mt-4 flex-row  justify-start grid  grid-cols-1  md:grid-cols-3 " id="items">
+
+            <div class="w-60 h-32 bg-gray-100 card-wrapper flex mb-4 ml-2">
+                <div class="  leftItem bg-green-300"></div>
+                <div class=" w-full h-full  right-item flex flex-col">
+                    <div class=" font-bold line">
+                        <i class="far fa-file-code mr-1"></i>
+
+                        Sample Text
+                    </div>
+                    <div class="text-sm  mh font-normal">spkit pdf file by spkit pdf file by spkit pdf file by</div>
+
+
+                </div>
+
+            </div>
+            <div class="w-60 h-32 bg-gray-200 card-wrapper flex mb-4 ml-2">
+                <div class="  leftItem bg-green-300"></div>
+                <div class=" w-full h-full  right-item flex flex-col">
+                    <div class=" font-bold line">
+                        <i class="far fa-file-code mr-1"></i>
+                        Sample Text
+                    </div>
+                    <div class="text-sm  mh font-normal">spkit pdf file by spkit pdf file by spkit pdf file by</div>
+
+
+                </div>
+
+            </div>
+
+            <div class="w-60 h-32 bg-gray-200 card-wrapper flex mb-4 ml-2 ">
+                <div class="  leftItem bg-green-300"></div>
+                <div class=" w-full h-full  right-item flex flex-col">
+                    <div class="text-lg font-bold line">
+                        <i class="far fa-file-code mr-1"></i>
+
+                        Sample Text
+                    </div>
+                    <div class="text-sm  mh font-normal">spkit pdf file by spkit pdf file by spkit pdf file by</div>
+
+
+                </div>
+
+            </div>
+            <div class="w-60 h-32 bg-gray-200 card-wrapper flex mb-4 ml-2">
+                <div class="  leftItem bg-green-300"></div>
+                <div class=" w-full h-full  right-item flex flex-col">
+                    <div class="text-lg font-bold line">
+                        <i class="far fa-file-code mr-1"></i>
+
+                        Mauris sed.
+
+                    </div>
+                    <div class="text-sm  mh font-normal">spkit pdf file by spkit pdf file by spkit pdf file by</div>
+
+
+                </div>
+
+            </div>
+            <div class="w-60 h-32 bg-gray-200 card-wrapper flex mb-4 ml-2">
+                <div class="  leftItem bg-green-300"></div>
+                <div class=" w-full h-full  right-item flex flex-col">
+                    <div class=" font-bold line">
+                        <i class="far fa-file-code mr-1"></i>
+
+                        Mauris sed.
+
+                    </div>
+                    <div class="text-sm  mh font-normal">Cras turpis mi, ultriciesy</div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class=" card   ">
+        <div class="text-xl font-bold	mt-10 ml-2">Category Tow</div>
+        <div class="   opacity  mt-4 flex-row  justify-start grid  grid-cols-1  md:grid-cols-3 hover:drop-shadow-2xl">
+            <div class="w-60 h-32 bg-gray-200 card-wrapper flex mb-4 ml-2">
+                <div class="  leftItem bg-yellow-500 "></div>
+                <div class=" w-full h-full  right-item flex flex-col">
+                    <div class="flex font-bold line">
+                        <img alt="" class="img mr-1 mt-1 "  src="./asset/books.svg">
+
+                        Duis pellentesque.
+
+                    </div>
+                    <div class="text-sm  mh font-normal">Cras turpis mi, ultricies sit</div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class=" card   ">
+        <div class="text-xl font-bold	mt-10 ml-2">Category Three</div>
+        <div class="   opacity  mt-4 flex-row  justify-start grid  grid-cols-1  md:grid-cols-3 hover:drop-shadow-2xl">
+            <div class="w-60 h-32 bg-gray-200 card-wrapper flex mb-4 ml-2">
+                <div class="  leftItem bg-blue-500 "></div>
+                <div class=" w-full h-full  right-item flex flex-col">
+                    <div class="flex font-bold line">
+                        <img alt="" class="img mr-1 mt-1 "  src="./asset/books.svg">
+                        Morbi lorem.
+
+                    </div>
+                    <div class="text-sm  mh font-normal">Sed eu lectus nec liberoy</div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class=" card  h-60">
+        <div class="text-xl font-bold	mt-10 ml-2">Category Four</div>
+        <div class="     mt-4 flex-row  justify-start grid  grid-cols-1  md:grid-cols-3 hover:drop-shadow-2xl">
+            <div class="w-60 h-32 bg-gray-200 card-wrapper flex mb-4 ml-2">
+                <div class="  leftItem bg-red-500 "></div>
+                <div class=" w-full h-full  right-item flex flex-col">
+                    <div class="flex font-bold line">
+                        <img alt="" class="img mr-1 mt-1 "  src="./asset/books.svg">
+
+                        Mauris sed.
+
+                    </div>
+                    <div class="text-sm  mh font-normal">spkit pdf file by spkit pdf file by spkit pdf file by</div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    const Tools = [
+        {
+            titel: "Class aptent",
+            discreption: "Vestibulum venenatis nulla posuere, pellentesque sapien",
+            category: "lit",
+            class: "./asset//books.svg"
+        },
+        {
+            titel: "Vivamus faucibus",
+            discreption: "Morbi pretium vulputate purus, id tincidunt",
+            category: "spt",
+            class: "./asset//copy.svg"
+        },
+        {
+            titel: "Nullam eget",
+            discreption: "Curabitur molestie quam ut molestie",
+            category: "spt",
+            class: "./asset//file-blank.svg"
+        },
+        {
+            titel: "any",
+            discreption: "Lorem ipsum dolor sit amet, consectetur",
+            category: "spt",
+            class: "./asset//file-bookmark-alt.svg"
+        },
+        {
+            titel: "Nunc gravida",
+            discreption: "Pellentesque rutrum ultrices felis, et sollicitudin",
+            category: "spt",
+            class: "./asset//folder-open.svg"
+        },
+        {
+            titel: "Morbi tincidunt",
+            discreption: "Lorem ipsum dolor sit amet, consectetur",
+            category: "spt",
+            class: "./asset//clipboard-blank.svg"
+        },
+
+
+    ];
+
+    let text = ""
+    Tools.forEach((i, index) => {
+            text += `
+    <div id="item${index}" class="w-72 h-auto bg-gray-200 card-wrapper flex mb-4 ml-2 hover:drop-shadow-2xl opacity-100">
+        <div class="  leftItem bg-green-600"></div>
+        <div class=" w-full h-full  right-item flex flex-col">
+          <div class=" font-bold line md:text-lg flex  ">
+            <img id="butn" src="${i.class}" alt=""  class="img mr-1 mt-1 " >
+
+            ${i.titel}
+          </div>
+          <div class="text-sm  mh font-normal">${i.discreption}</div>
+        </div>
+      </div>`;
+        }
+    )
+
+    document.getElementById("items").innerHTML = text
+
+    function deleteFun() {
+        document.getElementById("searchBar").value = " ";
+
+        document.getElementById("del").classList.add("dis");
+        document.getElementById("drop-down-menu").classList.add("dis");
+
+    }
+
+    function search() {
+        const val = document.getElementById("searchBar").value;
+        // search oparation
+        const result = Tools.filter(
+            (i) =>
+                i.titel.includes(val) ||
+                i.discreption.includes(val) ||
+                i.category.includes(val)
+        );
+        document.getElementById("drop-down-menu").innerHTML = "";
+        document.getElementById("drop-down-menu").classList.remove("dis");
+        document.getElementById("del").classList.remove("dis");
+        //    append to drop down menu.
+        result.map((i) =>
+            document
+                .getElementById("drop-down-menu")
+                .insertAdjacentHTML("beforeend", `<li>${i.titel}</li>`)
+        );
+        //----------------------
+        Tools.map((el, index) => {
+            el.titel.includes(val) ||
+            el.discreption.includes(val) ||
+            el.category.includes(val)
+                ?
+                document
+                    .getElementById(`item${index}`)
+                    .classList.remove("opacity")
+                : document.getElementById(`item${index}`).classList.add("opacity");
+        });
+    }
+
+    function blurFunc() {
+        document.getElementById("drop-down-menu").classList.add("dis");
+    }
+
+    document.getElementById("searchBar").addEventListener("keyup", search);
+    document.getElementById("searchBar").addEventListener("bulr", blurFunc);
+    document.getElementById("del").addEventListener("click", deleteFun);
+
+</script>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./tailwind.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+
+</head>
+
+
+
+<div class="container mx-auto ">
+    <nav class="font-sans  flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
+        <div class="bg-blue-600 flex ">
+            <img alt="" class="img-RIGHT"  src="./asset/savew.svg">
+            <img alt="" class="img-RIGHT"  src="./asset/angle-down-w.svg">
+
+        </div>
+
+        <div class="ml-72">
+            <div class=" wrapper border-4   rounded-xl">
+
+                <div class="search_box">
+                    <div class="dropdown">
+                        <img alt="" class="img-droparrow" id="button" src="./asset/angle-down-g.svg">
+                        <ul id="menu">
+                            <li>All</li>
+                            <li>Recent</li>
+                            <li>Popular</li>
+                        </ul>
+                    </div>
+                    <div class="search_field">
+                        <input class="input" pattern="[1-9][-][1-9]" placeholder="Search"
+                               type="text">
+                        <span class="validity"></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="mr-72 flex">
+            <img alt="" class="img-lift mr-4"  src="./asset/undo-alt-solid.svg">
+            <img alt="" class="img-lift mr-4"  src="./asset/redo-solid.svg">
+            <img alt="" class="img-lift ml-4"  src="./asset/eraser-solid.svg">
+        </div>
+    </nav>
+
+    <div class="  w-screen  h-50 grid mt-16 grid-cols-1 md:grid-cols-5 gap-4  ">
+        <div class="bg-gray-100 w-52 h-52 border-red-500 hover:drop-shadow-2xl">
+
+        </div>
+        <div class="bg-gray-100 w-52 h-52 border-red-500 hover:drop-shadow-2xl">
+
+
+        </div>
+        <div class="bg-gray-100 w-52 h-52 border-red-500 hover:drop-shadow-2xl">
+
+        </div>
+        <div class="bg-gray-100 w-52 h-52 border-red-500 hover:drop-shadow-2xl">
+
+        </div>
+        <div class="bg-gray-100 w-52 h-52 border-red-500 hover:drop-shadow-2xl">
+
+        </div>
+        <div class="bg-gray-100 w-52 h-52 border-red-500 hover:drop-shadow-2xl">
+
+        </div>
+
+        <div class="bg-gray-100 w-52 h-52 border-red-500 hover:drop-shadow-2xl">
+
+        </div>
+        <div class="bg-gray-100 w-52 h-52 border-red-500 hover:drop-shadow-2xl">
+
+        </div>
+        <div class="bg-gray-100 w-52 h-52 border-red-500 hover:drop-shadow-2xl">
+
+        </div>
+        <div class="bg-gray-100 w-52 h-52 border-red-500 hover:drop-shadow-2xl">
+
+        </div>
+
+    </div>
+    <div class="bg-red-400 w-52">
+
+
+    </div>
+
+</div>
+
+
+
+</html>
+
+<script>
+    function isopen() {
+        var el = document.getElementById('menu')
+        if (el.style.display === "none") {
+            el.style.display = "block"
+        }
+        else {
+            el.style.display = "none";
+        }
+    }
+
+    document.getElementById("button").addEventListener("click", isopen);
+</script>
+
